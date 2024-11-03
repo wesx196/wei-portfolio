@@ -1,40 +1,59 @@
-
 .navbar .navbar-nav {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    width: 100%;
-  }
-  
-  .navbar .navbar-collapse {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.navbar .navbar-collapse {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px; /* Adjust padding to increase the size */
+  font-size: 16px;     /* Increase the font size */
+  min-width: 150px;    /* Set a minimum width to ensure the text fits */
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+      padding: 5px 0; /* Reduce overall padding of the navbar */
+      height: auto; /* Ensure the navbar can collapse */
   }
 
+  .navbar .navbar-nav {
+      flex-direction: column; /* Stack items vertically */
+      padding: 0; /* Remove padding for a tighter layout */
+      margin: 0; /* Remove margin for a tighter layout */
+  }
 
   .btn {
-    padding: 10px 20px; /* Adjust padding to increase the size */
-    font-size: 16px;     /* Increase the font size */
-    min-width: 150px;    /* Set a minimum width to ensure the text fits */
-    font-weight: bold;
-  }
-  
-  @media (max-width: 768px) {
-    .btn {
-      min-width: 100%; /* Ensure the button expands full width on smaller screens */
-    }
+      margin-bottom: 0px; /* Add space below the button */
+      font-size: xx-small; /* Set font size for buttons */
+      padding: 5px 5px; /* Reduce button padding */
+      text-align: center;
   }
 
   .nav-link {
-    font-weight: bold;
+      padding: 0px; /* Reduce padding for nav links */
+      text-align: center; /* Center text on smaller screens */
+      font-size: xx-small; /* Set font size for links */
   }
 
-  .nav-link.active {
-    font-weight: bold; /* or change the color */
-    color: #007bff !important;
+  .navbar-brand {
+      font-size: xx-small; /* Reduce brand font size */
+      text-align: center;
   }
   
-  
-  
+}
 
-  
+.nav-link {
+  font-weight: bold;
+}
+
+.nav-link.active {
+  font-weight: bold; /* or change the color */
+  color: #007bff !important;
+}
