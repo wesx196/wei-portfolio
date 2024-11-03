@@ -13,6 +13,7 @@ export class HeaderComponent {
   isAddingContact = false;
 
   onStartAddContact() {
+    //Make the page return to top after clicking the contact button
     window.scrollTo({ top: 0, behavior: 'smooth' });
     this.isAddingContact = true;
   }
