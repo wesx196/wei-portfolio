@@ -1,0 +1,40 @@
+.intro {
+  background-image: url("/assets/background.jpg");
+  background-size: cover;
+}
+
+.display-1 {
+  font-size: 3rem;
+  font-weight: 450;
+}
+
+.display-2 {
+  font-size: 2rem;
+}
+
+.name .btn {
+  margin-right: 10px;
+}
+
+.profile {
+  padding: 40px; /* Adds space around the entire profile section */
+}
+
+.profile p {
+  margin: 20px auto; /* Adds margin around the paragraph */
+  max-width: 800px; /* Optional: Limits the width of the paragraph for better readability */
+  line-height: 1.6; /* Optional: Increases line spacing for better readability */
+}
+
+.skills .lead {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Add space between each icon */
+}
+
+.skills .lead i {
+  font-size: 3rem; 
+  margin: 10px; 
+  color: #333; 
+}

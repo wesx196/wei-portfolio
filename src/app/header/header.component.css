@@ -1,0 +1,40 @@
+
+.navbar .navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .navbar .navbar-collapse {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .btn {
+    padding: 10px 20px; /* Adjust padding to increase the size */
+    font-size: 16px;     /* Increase the font size */
+    min-width: 150px;    /* Set a minimum width to ensure the text fits */
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .btn {
+      min-width: 100%; /* Ensure the button expands full width on smaller screens */
+    }
+  }
+
+  .nav-link {
+    font-weight: bold;
+  }
+
+  .nav-link.active {
+    font-weight: bold; /* or change the color */
+    color: #007bff !important;
+  }
+  
+  
+  
+
+  
