@@ -76,7 +76,8 @@ button[type="button"]:active {
 }
 
 button[type="submit"] {
-  background-color: #9c73ca;
+  /* background-color: #9c73ca; */
+  background-color: #e4b2d7;
   color: #fff;
   font-weight: 500;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -84,7 +85,7 @@ button[type="submit"] {
 
 button[type="submit"]:hover,
 button[type="submit"]:active {
-  background-color: #895cce;
+  background-color: #d87fdb;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -92,4 +93,14 @@ button[type="submit"]:active {
   dialog {
       padding: 3rem;
   }
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border-color: red;
 }

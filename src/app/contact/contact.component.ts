@@ -1,11 +1,12 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule,CommonModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
@@ -20,9 +21,7 @@ export class ContactComponent {
     this.close.emit();
   }
 
-  // onSubmit() {
-  //   this.close.emit();
-  // }
+
 
   public sendEmail(e: Event) {
     e.preventDefault();
@@ -33,7 +32,6 @@ export class ContactComponent {
       })
       .then(
         () => {
-          // console.log('SUCCESS!');
           alert('Message sent successfully!')
         },
         (error) => {
