@@ -38,3 +38,15 @@
   margin: 10px; 
   color: #333; 
 }
+
+
+.skills .lead.no-margin {
+  margin-top: 0; /* Remove extra space above */
+  margin-bottom: 0; /* Remove extra space below */
+  padding-right: 100px;
+}
+
+.skills .col-md-4{
+  padding-left: 400px;
+}
+
