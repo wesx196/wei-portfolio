@@ -16,17 +16,22 @@ export class ContactComponent {
   enteredName = '';
   enteredEmail = '';
   enteredMessage = '';
+  isClicked = false;
+  
 
   onCancel() {
+    this.isClicked = false;
     this.close.emit();
   }
 
-
-
   public sendEmail(e: Event) {
+
+    this.isClicked = true;
     e.preventDefault();
 
-    emailjs
+    if(this.enteredName && this.enteredEmail && this.enteredMessage) {
+
+      emailjs
       .sendForm('service_ln3fdnj', 'template_169i1rs', e.target as HTMLFormElement, {
         publicKey: 'ZIyJROy6E2InjB0Cd',
       })
@@ -38,6 +43,8 @@ export class ContactComponent {
           console.log('FAILED...', (error as EmailJSResponseStatus).text);
         },
       );
+    }
+    
   }
 
 }

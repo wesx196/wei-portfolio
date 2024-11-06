@@ -51,9 +51,13 @@
       </span>
     </p>
 
+    <span *ngIf="isClicked && !name.touched && !email.touched && !message.touched" class="error">
+      Please fill out all the fields before submitting.
+    </span>
     <p class="actions">
       <button type="button" (click)="onCancel()">Cancel</button>
-      <button type="submit" [disabled]="contactForm.invalid">Send</button>
+      <button type="submit" >Send</button>
     </p>
+    
   </form>
 </dialog>
