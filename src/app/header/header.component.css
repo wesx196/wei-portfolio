@@ -1,8 +1,5 @@
 .navbar .navbar-nav {
-  display: flex;
   justify-content: center;
-  flex-direction: row;
-  width: 100%;
 }
 
 .navbar .navbar-collapse {
@@ -11,10 +8,14 @@
 }
 
 .btn {
-  padding: 10px 20px; /* Adjust padding to increase the size */
+  padding: 10px; /* Adjust padding to increase the size */
   font-size: 16px;     /* Increase the font size */
   min-width: 150px;    /* Set a minimum width to ensure the text fits */
   font-weight: bold;
+}
+
+.nav-item-home{
+  padding-left: 80px;
 }
 
 @media (max-width: 768px) {
