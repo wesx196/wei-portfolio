@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { ContactComponent } from "../contact/contact.component";
 
 @Component({
@@ -22,6 +22,14 @@ export class HeaderComponent {
     this.isAddingContact = false;
   }
 
+  @ViewChild('navbarContent') navbarContent!: ElementRef;
+
+  toggleNavbar(): void {
+    const element = this.navbarContent.nativeElement as HTMLElement;
+    element.classList.toggle('show');
+  }
+
+  
 
 
 }

@@ -1,13 +1,20 @@
 @if (isAddingContact) {
-<app-contact (close)="onCloseAddContact()" />
-}
-
-
-<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top"  data-bs-target="#navbar" data-bs-offset="0">
+  <app-contact (close)="onCloseAddContact()" />
+  }
+  
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#home">Wei Lu</a>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+    
+    <!-- Hamburger Menu for Mobile -->
+    <div class="hamburger-menu d-lg-none" (click)="toggleNavbar()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div #navbarContent class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0" >
         <li class="nav-item-home">
           <a class="nav-link" href="#home">Home</a>
         </li>
@@ -22,3 +29,5 @@
     </div>
   </div>
 </nav>
+
+
