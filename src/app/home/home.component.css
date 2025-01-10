@@ -17,20 +17,20 @@
 }
 
 .profile {
-  padding: 40px; /* Adds space around the entire profile section */
+  padding: 40px; 
 }
 
 .profile p {
-  margin: 20px auto; /* Adds margin around the paragraph */
-  max-width: 800px; /* Optional: Limits the width of the paragraph for better readability */
-  line-height: 1.6; /* Optional: Increases line spacing for better readability */
+  margin: 20px auto; 
+  max-width: 800px; 
+  line-height: 1.6; 
 }
 
 .skills .lead {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px; /* Add space between each icon */
+  gap: 20px; 
 }
 
 .skills .lead i {
@@ -41,12 +41,31 @@
 
 
 .skills .lead.no-margin {
-  margin-top: 0; /* Remove extra space above */
-  margin-bottom: 0; /* Remove extra space below */
+  margin-top: 0; 
+  margin-bottom: 0; 
   padding-right: 100px;
 }
 
 .skills .col-md-4{
   padding-left: 300px;
 }
+
+.project-image{
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 1200px) {
+  .skills .row {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+
+
+
 
