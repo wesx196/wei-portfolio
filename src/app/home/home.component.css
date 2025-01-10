@@ -56,6 +56,10 @@
   height: auto;
 }
 
+.time {
+  font-size: large
+}
+
 
 @media (max-width: 1200px) {
   .skills .row {
